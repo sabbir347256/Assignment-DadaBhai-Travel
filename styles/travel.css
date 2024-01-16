@@ -14,12 +14,12 @@ header,main{
     --white:#fff;
 }
 
-.pri-font,.nav-item a{
+.pri-font,.nav-item a,.destinition-description,.choose-des{
     color: #424247;
     font-size: 18px;
     font-weight: 400;
 }
-.pri-font2{
+.pri-font2,.destinition-title,.choose-title{
     color: #131318;
     font-size: 38px;
     font-weight: 800;
@@ -147,6 +147,42 @@ header,main{
     border-radius: 0.5rem;
     color: var(--white);
 }
+
+/* destinitation part */
+
+.destinition{
+    margin-top: 6.25rem;
+}
+.destinition-details,.destinition-title,.destinition-description,.choose-detail{
+    text-align: center;
+}
+.destinition-description,.choose-des{
+    margin: 1.5rem 7rem 0 7rem;
+}
+
+.image-list1,.image-list2,.image-list3{
+    display: grid;
+}
+.image-list1{
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 3rem;
+    gap: 1.5rem;
+}
+.image-list2{
+    grid-template-columns: repeat(1,1fr) 1.7fr 0.8fr;
+    margin: 1.5rem 0 1.5rem 0;
+    gap: 1.5rem;
+}
+.image-list3{
+    grid-template-columns: repeat(1,1.5fr) 2fr;
+    margin-bottom: 6.25rem;
+    gap: 1.5rem;
+}
+.destinition-image img{
+    width: 100%;
+    height: 100%;
+}
+
 /* responsive website */
 @media screen and (max-width: 600px) {
     .header{
@@ -189,5 +225,17 @@ header,main{
     #Read-btn{
         margin-bottom: 1.5rem;
     }
-    
+    .destinition-title{
+        margin-bottom: 1.5rem;
+    }
+    .destinition-description{
+        margin: 0;
+    }
+    .destinition-image img{
+        width: 21rem;
+        height: 11rem;
+    }
+    .image-list1,.image-list2,.image-list3{
+        grid-template-columns: 1fr;
+    }
 }
