@@ -254,6 +254,22 @@ header,main{
     position: relative;
     top: 2rem;
 }
+/* Perfect place */
+
+.perfect-place{
+    display: flex;
+    margin-top: 6.25rem;
+}
+.place-details{
+    margin-right: 1.6rem;
+}
+#see-more-btn{
+    margin-top: 2rem;
+}
+.video video{
+    width: 33rem;
+    border-radius: 1rem;
+}
 
 /* about company */
 .about-company{
@@ -393,5 +409,12 @@ footer{
     .package{
         position: relative;
         right: 2.3rem;
+    }
+    .perfect-place{
+        flex-direction: column;
+    }
+    .video video{
+        width: 100%;
+        margin-top: 3rem;
     }
 }
