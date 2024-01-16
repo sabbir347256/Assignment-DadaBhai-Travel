@@ -291,7 +291,43 @@ header,main{
     border: 2px solid white;  
     padding: 4rem;  
 }
+/* subscribe section */
 
+.submit{
+    display: flex;
+    margin-bottom: 6.25rem;
+}
+.submit-detail{
+    border: 1px solid #FF5400;
+    border-radius: 1rem;
+    margin-right: 1.5rem;
+    padding: 2.5rem;
+}
+.submit-intput{
+    border-radius: 2px;
+    background: rgba(19, 19, 24, 0.05);
+    border: 0;
+    padding: 1rem 6rem 1rem 1.5rem;
+}
+
+.submit-section-image img{
+    width: 40rem;
+    height: 100%;
+}
+
+.submit-section-image{
+    position: relative;
+}
+.save-detail{
+    position: absolute;
+    background-color: #FF5400;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    color: white;
+    top: 15rem;
+    left: 22rem;
+    transform: rotate(-20deg);
+}
 
 /* footer */
 
@@ -416,5 +452,20 @@ footer{
     .video video{
         width: 100%;
         margin-top: 3rem;
+    }
+    .submit{
+        flex-direction: column;
+    }
+    .submit-detail{
+        width: 22rem;
+    }
+    .submit-section-image img{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .save-detail{
+        position: absolute;
+        top: 10rem;
+        left: 10rem;
     }
 }
