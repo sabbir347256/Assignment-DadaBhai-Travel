@@ -14,12 +14,12 @@ header,main{
     --white:#fff;
 }
 
-.pri-font,.nav-item a,.destinition-description,.choose-des{
+.pri-font,.nav-item a,.destinition-description,.choose-des,.footer-description{
     color: #424247;
     font-size: 18px;
     font-weight: 400;
 }
-.pri-font2,.destinition-title,.choose-title{
+.pri-font2,.destinition-title,.choose-title,.travel-title{
     color: #131318;
     font-size: 38px;
     font-weight: 800;
@@ -182,6 +182,66 @@ header,main{
     width: 100%;
     height: 100%;
 }
+/* travel service */
+.travel-service{
+    display: flex;
+    margin: 3rem 0 1.5rem 0;
+}
+.hotel{
+    margin-right: 1.5rem;
+}
+.hotel,.class-service,.best-price{
+    padding: 2rem 3.4rem 2rem 2rem;
+}
+.hotel,.best-price{
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.best-price{
+    margin-left: 16.5rem;
+    width: 27.2rem;
+    margin-bottom: 6.25rem;
+}
+.class-service{
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.travel-service img,.best-price img{
+    width: 4rem;
+    height: 4rem;
+}
+.travel-title{
+    font-size: 1.5rem;
+}
+/* footer */
+
+footer{
+    text-align: center;
+    background: rgba(19, 19, 24, 0.05);
+    width: 100%;
+    height: 100%;
+}
+.footer-design{
+    margin: 0 20rem 0 20rem;
+    padding: 7rem 0 7rem 0;
+}
+.footer-description{
+    margin-top: 1rem;
+}
+.footer-icon img{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+.footer-copyright{
+    margin-top: 6.25rem;
+}
+.footer-des img h3{
+    text-align: center;
+}
 
 /* responsive website */
 @media screen and (max-width: 600px) {
@@ -232,10 +292,28 @@ header,main{
         margin: 0;
     }
     .destinition-image img{
+        margin-left: 3rem;
         width: 21rem;
         height: 11rem;
     }
     .image-list1,.image-list2,.image-list3{
         grid-template-columns: 1fr;
+    }
+    .travel-service{
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .best-price{
+        margin: 0;
+    }
+    .hotel,.class-service,.best-price{
+        margin:1.5rem;
+        width: 19rem;
+        height: 17rem;
+    }
+    .footer-design{
+        margin: 0;
+        padding: 2.75rem;
     }
 }
