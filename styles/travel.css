@@ -13,6 +13,7 @@ header,main{
     --weight:800;
     --white:#fff;
 }
+
 .pri-font,.nav-item a{
     color: #424247;
     font-size: 18px;
@@ -76,20 +77,36 @@ header,main{
     font-size: 16px;
     font-weight: 400;
 }
+
 .find-section{
     background: rgba(255, 255, 255, 0.30);
     border-radius: 8px;
     text-align: center;
-    margin: 3rem 9rem 6.5rem 9rem;
+    margin: 3rem 6rem 6.5rem 6rem;
     padding: 1rem;
+    display: flex;
 }
 #when,#select{
     position: relative;
     left: 11rem;
+    height: 20px;
+    text-align: center;
 }
 .find-section input{
     padding: .5rem .5rem .5rem .5rem;
     border-radius: 8px;
+    border: none;
+}
+#btn{
+    width: 9rem ;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 0;
+}
+#search{
+    position: relative;
+    left: 2rem;
+    color: var(--white);
 }
 /* responsive website */
 @media screen and (max-width: 600px) {
@@ -100,6 +117,21 @@ header,main{
         display: inline-block;
     }
     .navbar ul li a{
+        display: none;
+    }
+    .banner-description{
+        margin: 0;
+        padding: 0;
+    }
+    .find-section {
+        margin: 2rem 1.5rem 2rem 1.5rem;
+        padding: 0;
+        flex-direction: column;
+    }
+    .find-section input {
+        margin-bottom: 1rem;
+    }
+    #when,select{
         display: none;
     }
 }
