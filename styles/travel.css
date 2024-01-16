@@ -139,7 +139,7 @@ header,main{
 #list1,#list2,#list3{
     margin-bottom: 1.5rem;
 }
-#Read-btn{
+#Read-btn,.Read-btn{
     margin-top: 1.5rem;
     padding: 0.8rem 1rem 0.8rem 1rem;
     background-color: var(--primary-color);
@@ -153,7 +153,7 @@ header,main{
 .destinition{
     margin-top: 6.25rem;
 }
-.destinition-details,.destinition-title,.destinition-description,.choose-detail{
+.destinition-details,.destinition-title,.destinition-description,.choose-detail,.about{
     text-align: center;
 }
 .destinition-description,.choose-des{
@@ -215,6 +215,68 @@ header,main{
 .travel-title{
     font-size: 1.5rem;
 }
+/* deals and discount */
+
+.deals-des{
+    text-align: center;
+}
+.coxbazar,.Sajek,.Jaflong{
+    background-image: url(../Images/Group\ 39.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    height: 31.25rem;
+    width: 100%;
+}
+.cox-tour-detail,.Sajek-tour-detail,.jaflong-tour-detail{
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 3.2rem 5rem 3.2rem 3.2rem;
+    position: relative;
+    top: 4rem;
+    margin: 0 3.5rem 3.5rem 25rem;
+}
+.Sajek{
+    background-image: url(../Images/Group\ 40.png);
+}
+.Sajek-tour-detail{
+    position: relative;
+    top: 4rem;
+    margin: 0 25rem 3.5rem 3.5rem;
+}
+
+.jaflong-tour-detail{
+    position: relative;
+    top: 2rem;
+}
+
+/* about company */
+.about-company{
+    display: flex;
+    background-color: cadetblue;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 4rem 0 4rem 0;
+}
+.travel-image{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.travel-image img{
+    width: 100%;
+    height: 100%;
+}
+.about{
+    border: 2px solid white;  
+    padding: 4rem;  
+}
+
+
 /* footer */
 
 footer{
@@ -315,5 +377,21 @@ footer{
     .footer-design{
         margin: 0;
         padding: 2.75rem;
+    }
+    .cox-tour-detail,.Sajek-tour-detail,.jaflong-tour-detail{
+        position: relative;
+        top: 0.8rem;
+        bottom: 0.5rem;
+        margin: 0 1rem 1rem 1rem;
+    }
+    .jaflong-tour-detail{
+        position: relative;
+        top: 2rem;
+        bottom: 1rem;
+        margin: 0 1rem 1rem 1rem;
+    }
+    .package{
+        position: relative;
+        right: 2.3rem;
     }
 }
