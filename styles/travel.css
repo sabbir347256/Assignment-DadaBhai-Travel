@@ -406,7 +406,7 @@ footer{
         margin: 0;
     }
     .destinition-image img{
-        margin-left: 3rem;
+        margin-left: 1.7rem;
         width: 21rem;
         height: 11rem;
     }
@@ -417,13 +417,12 @@ footer{
         margin: 0;
         flex-direction: column;
     }
-
     .best-price{
         margin: 0;
     }
     .hotel,.class-service,.best-price{
-        margin:1.5rem;
-        width: 19rem;
+        margin:1rem;
+        width: 17rem;
         height: 17rem;
     }
     .footer-design{
@@ -457,7 +456,7 @@ footer{
         flex-direction: column;
     }
     .submit-detail{
-        width: 22rem;
+        width: 19rem;
     }
     .submit-section-image img{
         width: 100%;
@@ -465,7 +464,7 @@ footer{
     }
     .save-detail{
         position: absolute;
-        top: 10rem;
-        left: 10rem;
+        top: 8rem;
+        left: 8rem;
     }
 }
